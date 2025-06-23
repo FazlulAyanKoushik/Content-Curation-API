@@ -27,7 +27,7 @@ A FastAPI-based service for content management with AI-powered analysis features
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/content-curation-api.git
+   git clone https://github.com/FazlulAyanKoushik/Content-Curation-API.git
    cd content-curation-api
    
 
