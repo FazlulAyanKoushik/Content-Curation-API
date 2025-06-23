@@ -68,7 +68,7 @@ async def create_user(
         username=new_user.username,
         email=new_user.email,
         hashed_password=_hash(new_user.password),
-        role=new_user.role or RoleEnum.MODERATOR,
+        role=new_user.role or RoleEnum.END_USER,
     )
     db.add(user)
     try:

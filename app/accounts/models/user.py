@@ -10,8 +10,7 @@ from app.config.database import Base
 
 class RoleEnum(str, enum.Enum):
     ADMIN = "admin"
-    MODERATOR = "moderator"
-    PUBLIC = "public"
+    END_USER = "end_user"
 
 
 class User(Base):
@@ -26,7 +25,7 @@ class User(Base):
     hashed_password = Column(String, nullable=False)
     role = Column(
         Enum(RoleEnum, name="user_role", native_enum=False),
-        default=RoleEnum.MODERATOR,
+        default=RoleEnum.END_USER,
         nullable=False,
     )
     created_at = Column(

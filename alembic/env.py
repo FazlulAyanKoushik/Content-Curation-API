@@ -10,6 +10,7 @@ load_dotenv()
 
 from app.config.database import Base
 from app.accounts.models.user import User
+from app.content_AI.models.content import Content, AIAnalysis
 
 target_metadata = Base.metadata
 
